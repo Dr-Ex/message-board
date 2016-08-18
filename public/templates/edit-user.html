@@ -1,0 +1,27 @@
+{% extends "base-template.html" %}
+
+{% block content %}
+<h1>Edit User</h1>
+
+<form action="edit-user" method="post">
+
+	<label>Username</label>
+	<input name="username" type="text" value="{{ user_data.username }}">
+
+	<label>Password</label>
+	<input name="password" type="password" value="{{ user_data.password }}">
+
+	<label>First Name</label>
+	<input name="first_name" type="text" value="{{ user_data.first_name }}">
+
+	<label>Last Name</label>
+	<input name="last_name" type="text" value="{{ user_data.last_name }}">
+
+	<label>Email Address</label>
+	<input name="email" type="email" value="{{ user_data.email }}">
+
+
+	<input type="submit" value="Confirm">
+
+</form>
+{% endblock %}

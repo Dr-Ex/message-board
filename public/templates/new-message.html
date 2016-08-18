@@ -1,0 +1,14 @@
+{% extends "base-template.html" %}
+
+{% block content %}
+<h1>Post a new message</h1>
+
+<form action="new-message" method="post">
+
+	<label>What's happening?</label>
+	<textarea name="message"></textarea>
+	<input type="submit" value="Post message">
+
+</form>
+
+{% endblock %}

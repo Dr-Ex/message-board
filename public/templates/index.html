@@ -1,0 +1,18 @@
+{% extends "base-template.html" %}
+
+{% block content %}
+<h1>Messages</h1>
+
+<ol class="messages-list">
+	{% for message in messages %}
+		<li>{{ message['time_created'][:16] }} {{ message['username']}}: {{ message['content'] }}
+			{% if current_user.username == message['username'] %}
+				<div class="message-buttons">
+					<a href="{{ url_for('edit_message', message_id = message['message_id']) }}">Edit</a> | 
+					<a href="{{ url_for('delete_message', message_id = message['message_id']) }}">Delete</a>
+				</div>
+			{% endif %}
+		</li>
+	{% endfor %}
+</ol>
+{% endblock %}

@@ -1,0 +1,174 @@
+body, html {
+  background: url(/static/images/blurredbackground.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-image: url(/static/images/gplaypattern.png);
+  background-color: #446688;
+  background-blend-mode: multiply;*/
+  margin: 0;
+  font-family: verdana;
+}
+
+
+
+/*
+=================
+HEADER
+=================
+*/
+
+/* 
+the full header which contains
+the logo, navigation and username
+*/
+.page-header {
+	background: #222222;
+	color: #EFEFEF;
+	width: 100%;
+	display: flex;
+}
+
+/* 
+the name of the website 
+*/
+.logo {
+	color: #EFEFEF;
+	font-family: Impact;
+	display: inline-block;
+	padding: 10px;
+	font-size: 18px;
+}
+
+/*
+the page links in the header 
+*/
+.main-navigation {
+	padding: 10px;
+	display: inline-block;
+	flex: 1;
+}
+
+/* 
+the links in the nav bar
+*/
+.main-navigation a {
+	color: #FFFFFF;
+	text-decoration: none;
+	margin: 10px;
+}
+
+/*
+contains the username and either
+sign in or sign out button
+*/
+.user-info {
+	padding: 10px;
+}
+
+.user-info a {
+	color: #446688;
+	text-decoration: none;
+}
+
+.user-info a:hover {
+	color: #EFEFEF;
+}
+
+
+
+
+
+
+/* 
+===================
+PAGE CONTENT
+=================== 
+*/
+
+.page-content {
+	width: 100%;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 
+title on each page
+*/
+h1 {
+	color: #2f4f4f;
+
+}
+
+/*
+the list box which contains the
+list of all messages
+*/
+.messages-list {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+an individual message item in the list
+*/
+.messages-list li {
+	background: #EFEFEF;
+	border: 1px solid #FFFFFF;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 3px;
+}
+
+/* 
+the edit button on each message 
+*/
+.message-buttons {
+	display: block;
+}
+.messages-list li a {
+	/*float: left;*/
+	color: #446688;
+	text-decoration: none;
+}
+
+.message-list li a:hover {
+	color: #6688FF;
+}
+
+.messages-list li.own-message {
+	background: #DEDEFF;
+	border-color: #DEDEFF;
+}
+
+
+
+
+/*
+===============
+FORMS
+===============
+*/
+
+form {
+	background: #EFEFEF;
+	border: 1px solid #FFFFFF;
+	padding: 10px;
+	margin: 5px;
+	width: 100%;
+}
+
+form label {
+	display: block;
+}
+
+form input[type=text], form input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}

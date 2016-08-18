@@ -1,0 +1,14 @@
+{% extends "base-template.html" %}
+
+{% block content %}
+<form action="edit-message" method="post">
+	
+	<label>Message</label>
+	<textarea name="message">{{ message.content }}</textarea>
+
+	<input type="hidden" name="message_id" value="{{ message.message_id }}">
+
+	<input type="submit" name="Save">
+
+</form>
+{% endblock %}
